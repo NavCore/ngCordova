@@ -15,6 +15,12 @@ This project is using Angular 4 + Cordova boilerplate configurated to work toget
 * Development project folder is `src/`. You should start building your Angular 4 app there!
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Angular project base URL
+
+* For Android App to work, change base url in index.html to: `<base href="file:///android_asset/www/">` or simple: `<base href=".">`
+* For iOS App to work, change base url in index.html to: `<base href="./">` or `<base href=".">`
+* Then build the Angular project
+
 ## Build Angular project
 
 * Run `ng build` to build the Angular project. 
@@ -30,6 +36,7 @@ This project is using Angular 4 + Cordova boilerplate configurated to work toget
 ## Run Cordova app
 
 * After adding Cordova platform, we can run our app in desired platform: `cordova run [ browser | android | .. ]`
+* There is a known problem with emulating Android app using: `cordova emulate android`, so use `cordova run android`
 
 ## Build Cordova project
 
